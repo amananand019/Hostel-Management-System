@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.HistoryView">
+   <children>
+      <AnchorPane prefHeight="740.0" prefWidth="1000.0">
+         <children>
+            <TableView layoutX="53.0" layoutY="90.0" prefHeight="586.0" prefWidth="895.0">
+              <columns>
+                <TableColumn fx:id="s_no" prefWidth="75.0" text="S No." />
+                <TableColumn fx:id="staff_username" prefWidth="251.4665985107422" text="Staff Username" />
+                  <TableColumn fx:id="student_usn" minWidth="0.0" prefWidth="230.13336181640625" text="Student USN" />
+                  <TableColumn fx:id="bed_number" minWidth="0.0" prefWidth="152.53338623046875" text="Bed Number" />
+                  <TableColumn fx:id="date_time" minWidth="0.0" prefWidth="186.1334228515625" text="Date Time" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.SearchView">
+   <children>
+      <AnchorPane prefHeight="740.0" prefWidth="1000.0">
+         <children>
+            <TableView layoutX="45.0" layoutY="137.0" prefHeight="563.0" prefWidth="904.0">
+              <columns>
+                  <TableColumn prefWidth="142.39990615844727" text="USN" />
+                <TableColumn prefWidth="164.0000762939453" text="Name" />
+                <TableColumn prefWidth="118.13339233398438" text="Bed Number" />
+                  <TableColumn prefWidth="113.066650390625" text="Food Type" />
+                  <TableColumn prefWidth="57.86669921875" text="Year" />
+                  <TableColumn prefWidth="108.0" text="Base Fee" />
+                  <TableColumn prefWidth="85.86663818359375" text="Laundry Pack" />
+                  <TableColumn prefWidth="114.933349609375" text="Total Fee" />
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="tf_usn" focusColor="#ffffff00" layoutX="49.0" layoutY="66.0" prefHeight="38.0" prefWidth="306.0" promptText="Search by USN" style="-fx-background-color: #F3F3F3; -fx-background-radius: 1em 1em 1em 1em; -fx-padding: 0 20; -fx-border-color: transparent;" unFocusColor="TRANSPARENT">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="searchByUSN" buttonType="RAISED" layoutX="381.0" layoutY="66.0" prefHeight="38.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #2196F3; -fx-background-radius: 2em;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="tf_name" focusColor="#ffffff00" layoutX="518.0" layoutY="67.0" prefHeight="38.0" prefWidth="306.0" promptText="Search by Name" style="-fx-background-color: #F3F3F3; -fx-background-radius: 1em 1em 1em 1em; -fx-padding: 0 20; -fx-border-color: transparent;" unFocusColor="TRANSPARENT">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="searchByName" buttonType="RAISED" layoutX="850.0" layoutY="67.0" prefHeight="38.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #E56399; -fx-background-radius: 2em;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

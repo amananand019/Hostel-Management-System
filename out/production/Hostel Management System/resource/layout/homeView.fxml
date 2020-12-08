@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.HomeView">
+   <children>
+      <AnchorPane fx:id="contentPane" prefHeight="740.0" prefWidth="1000.0">
+         <children>
+            <Label fx:id="clock" layoutX="873.0" layoutY="25.0" text="04:54" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="118.0" fitWidth="114.0" layoutX="97.0" layoutY="70.0">
+               <image>
+                  <Image url="@../drawable/jss.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="229.0" layoutY="85.0" text="JSSATE" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="232.0" layoutY="129.0" text="BENGALURU" textFill="#e5deb7">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="898.0" layoutY="653.0" text="255" textFill="#eeff07">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="891.0" layoutY="701.0" text="beds available" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="singleSharing" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="341.0" layoutY="468.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #3BCEAC; -fx-background-radius: 2.5em 2.5em 0.5em 2.5em;" text="Single Sharing">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../drawable/single_sharing.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="doubleSharing" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="461.0" layoutY="468.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #E56399; -fx-background-radius: 2.5em 2.5em 0.5em 2.5em;" text="Double Sharing">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../drawable/double_sharing.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="tripleSharing" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="581.0" layoutY="468.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #779BE7; -fx-background-radius: 2.5em 2.5em 0.5em 2.5em;" text="Triple Sharing">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../drawable/triple_sharing.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="food" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="400.0" layoutY="573.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #2B303A; -fx-background-radius: 2.5em 2.5em 0.5em 2.5em;" text="Food">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../drawable/food.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="laundry" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="530.0" layoutY="573.0" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #636363; -fx-background-radius: 2.5em 2.5em 0.5em 2.5em;" text="Laundry">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../drawable/laundry.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="180.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.DrawerContent">
+   <children>
+      <JFXButton fx:id="btn_home" contentDisplay="TOP" graphicTextGap="10.0" layoutY="150.0" onAction="#openHome" prefHeight="80.0" prefWidth="180.0" ripplerFill="BLACK" text="Home" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../drawable/drawer_home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_dashboard" contentDisplay="TOP" graphicTextGap="10.0" layoutY="240.0" onAction="#openDashboard" prefHeight="80.0" prefWidth="180.0" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../drawable/drawer_dashboard.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_history" contentDisplay="TOP" graphicTextGap="10.0" layoutY="330.0" onAction="#openHistory" prefHeight="80.0" prefWidth="180.0" text="History" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../drawable/drawer_history.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_search" contentDisplay="TOP" graphicTextGap="10.0" layoutY="420.0" onAction="#openSearch" prefHeight="80.0" prefWidth="180.0" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../drawable/drawer_search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn_logout" contentDisplay="TOP" layoutX="45.0" layoutY="637.0" onAction="#open_logout" prefHeight="34.0" prefWidth="90.0" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView accessibleRole="BUTTON" fitHeight="40.0" fitWidth="36.0">
+               <image>
+                  <Image url="@../drawable/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

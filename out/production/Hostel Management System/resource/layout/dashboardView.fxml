@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.DashboardView">
+   <children>
+      <AnchorPane prefHeight="740.0" prefWidth="1000.0">
+         <children>
+            <AnchorPane layoutX="360.0" layoutY="125.0" prefHeight="450.0" prefWidth="500.0" style="-fx-background-radius: 0em 10em 10em 0em; -fx-opacity: 0.85;" />
+            <ImageView fx:id="myImage" fitHeight="225.0" fitWidth="224.0" layoutX="248.0" layoutY="246.0" pickOnBounds="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Label fx:id="username" alignment="CENTER" layoutX="531.0" layoutY="284.0" prefHeight="18.0" prefWidth="259.0" text="username" textFill="#f1ff00">
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" alignment="CENTER" layoutX="422.0" layoutY="322.0" prefHeight="44.0" prefWidth="477.0" text="Aman Anand" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="38.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" alignment="CENTER" layoutX="396.0" layoutY="371.0" prefHeight="30.0" prefWidth="526.0" text="amananand019@gmail.com" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone" alignment="CENTER" layoutX="399.0" layoutY="407.0" prefHeight="30.0" prefWidth="526.0" text="9122020291" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

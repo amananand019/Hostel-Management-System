@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #779BE7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.homebuttons.TripleSharing">
+   <children>
+      <ImageView layoutX="200.0" layoutY="41.0">
+         <image>
+            <Image url="@../../drawable/sharing/triple.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="109.0" layoutY="193.0" scaleX="0.75" scaleY="0.75">
+         <image>
+            <Image url="@../../drawable/sharing/university.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="tf_usn" focusColor="#ffffff00" layoutX="165.0" layoutY="199.0" prefHeight="38.0" prefWidth="220.0" promptText="University Serial No." style="-fx-background-color: #F3F3F3; -fx-background-radius: 1em 1em 1em 1em; -fx-padding: 0 20; -fx-border-color: transparent;" unFocusColor="TRANSPARENT">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <ImageView layoutX="108.0" layoutY="254.0" scaleX="0.75" scaleY="0.75">
+         <image>
+            <Image url="@../../drawable/sharing/student.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="tf_name" focusColor="#ffffff00" layoutX="164.0" layoutY="260.0" prefHeight="38.0" prefWidth="220.0" promptText="Name of student" style="-fx-background-color: #F3F3F3; -fx-background-radius: 1em 1em 1em 1em; -fx-padding: 0 20; -fx-border-color: transparent;" unFocusColor="TRANSPARENT">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXRadioButton fx:id="rb_north" layoutX="165.0" layoutY="331.0" selected="true" style="-jfx-unselected-color: white; -jfx-selected-color: yellow; -fx-text-fill: white;" text="North Food" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rd_south" layoutX="290.0" layoutY="331.0" style="-jfx-unselected-color: white; -jfx-selected-color: yellow; -fx-text-fill: white;" text="South Food" textFill="WHITE" toggleGroup="$group" />
+      <ImageView layoutX="108.0" layoutY="371.0" scaleX="0.75" scaleY="0.75">
+         <image>
+            <Image url="@../../drawable/sharing/year.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="tf_year" focusColor="#ffffff00" layoutX="165.0" layoutY="377.0" prefHeight="38.0" prefWidth="220.0" promptText="Year" style="-fx-background-color: #F3F3F3; -fx-background-radius: 1em 1em 1em 1em; -fx-padding: 0 20; -fx-border-color: transparent;" unFocusColor="TRANSPARENT">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="bt_add" buttonType="RAISED" layoutX="209.0" layoutY="463.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #3BCEAC;" text="ADD">
+         <font>
+            <Font name="Segoe UI Historic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
