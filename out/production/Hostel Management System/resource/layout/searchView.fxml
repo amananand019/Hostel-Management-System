@@ -13,7 +13,7 @@
    <children>
       <AnchorPane prefHeight="740.0" prefWidth="1000.0">
          <children>
-            <TableView fx:id="table_search" layoutX="45.0" layoutY="137.0" prefHeight="563.0" prefWidth="904.0">
+            <TableView fx:id="table_search" layoutX="49.0" layoutY="137.0" prefHeight="563.0" prefWidth="904.0">
               <columns>
                   <TableColumn fx:id="col_usn" prefWidth="149.8666114807129" style="-fx-alignment: CENTER;" text="USN" />
                 <TableColumn fx:id="col_name" prefWidth="151.9999237060547" style="-fx-alignment: CENTER;" text="Name" />

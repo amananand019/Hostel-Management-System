@@ -85,6 +85,14 @@ public class SearchView implements Initializable {
                 throwables.printStackTrace();
             }
         });
+
+        tf_name.setOnMouseClicked(event ->{
+            tf_usn.setText("");
+        });
+
+        tf_usn.setOnMouseClicked(event -> {
+            tf_name.setText("");
+        });
     }
 
     private void searchByUSN() throws SQLException {
