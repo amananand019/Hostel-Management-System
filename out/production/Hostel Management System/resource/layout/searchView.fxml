@@ -13,16 +13,16 @@
    <children>
       <AnchorPane prefHeight="740.0" prefWidth="1000.0">
          <children>
-            <TableView layoutX="45.0" layoutY="137.0" prefHeight="563.0" prefWidth="904.0">
+            <TableView fx:id="table_search" layoutX="45.0" layoutY="137.0" prefHeight="563.0" prefWidth="904.0">
               <columns>
-                  <TableColumn prefWidth="142.39990615844727" text="USN" />
-                <TableColumn prefWidth="164.0000762939453" text="Name" />
-                <TableColumn prefWidth="118.13339233398438" text="Bed Number" />
-                  <TableColumn prefWidth="113.066650390625" text="Food Type" />
-                  <TableColumn prefWidth="57.86669921875" text="Year" />
-                  <TableColumn prefWidth="108.0" text="Base Fee" />
-                  <TableColumn prefWidth="85.86663818359375" text="Laundry Pack" />
-                  <TableColumn prefWidth="114.933349609375" text="Total Fee" />
+                  <TableColumn fx:id="col_usn" prefWidth="149.8666114807129" style="-fx-alignment: CENTER;" text="USN" />
+                <TableColumn fx:id="col_name" prefWidth="151.9999237060547" style="-fx-alignment: CENTER;" text="Name" />
+                  <TableColumn fx:id="col_sharing" prefWidth="94.39999389648438" style="-fx-alignment: CENTER;" text="Sharing" />
+                <TableColumn fx:id="col_bed" prefWidth="89.86663818359375" style="-fx-alignment: CENTER;" text="Bed Number" />
+                  <TableColumn fx:id="col_year" prefWidth="58.4000244140625" style="-fx-alignment: CENTER;" text="Year" />
+                  <TableColumn fx:id="col_basefee" prefWidth="128.26666259765625" style="-fx-alignment: CENTER;" text="Base Fee" />
+                  <TableColumn fx:id="col_laundry" prefWidth="110.933349609375" style="-fx-alignment: CENTER;" text="Laundry Pack" />
+                  <TableColumn fx:id="col_total" prefWidth="119.99993896484375" style="-fx-alignment: CENTER;" text="Total Fee" />
               </columns>
             </TableView>
             <JFXTextField fx:id="tf_usn" focusColor="#ffffff00" layoutX="49.0" layoutY="66.0" prefHeight="38.0" prefWidth="306.0" promptText="Search by USN" style="-fx-background-color: #F3F3F3; -fx-background-radius: 1em 1em 1em 1em; -fx-padding: 0 20; -fx-border-color: transparent;" unFocusColor="TRANSPARENT">
