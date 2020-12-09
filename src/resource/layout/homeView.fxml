@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.HomeView">
    <children>
       <AnchorPane fx:id="contentPane" prefHeight="740.0" prefWidth="1000.0">
@@ -33,7 +32,7 @@
                   <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="898.0" layoutY="653.0" text="255" textFill="#eeff07">
+            <Label fx:id="tf_bed_count" alignment="CENTER" layoutX="905.0" layoutY="653.0" text="255" textFill="#eeff07">
                <font>
                   <Font name="System Bold" size="40.0" />
                </font>

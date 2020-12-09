@@ -112,7 +112,7 @@ public class DoubleSharing implements Initializable {
 
             preparedStatement2.setString(4, String.valueOf(bed + 1));
             preparedStatement2.setInt(5, Integer.parseInt(tf_year.getText()));
-            preparedStatement2.setInt(6, 80000);
+            preparedStatement2.setInt(6, 120000);
             preparedStatement2.executeUpdate();
         }catch (SQLException e) {
             if(e instanceof SQLIntegrityConstraintViolationException){

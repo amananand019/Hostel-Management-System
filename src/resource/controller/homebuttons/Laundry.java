@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -50,6 +51,13 @@ public class Laundry implements Initializable {
             }
 
             tf_totalCost.setText(String.valueOf(combo*2000));
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Package Added");
+            alert.setHeaderText("Laundry pack "+combo+" washes/month"+" has been added to "+ tf_usn.getText());
+            alert.showAndWait();
+
+            Stage stage = (Stage) bt_add.getScene().getWindow();
+            stage.close();
         });
 
     }
@@ -79,7 +87,7 @@ public class Laundry implements Initializable {
         if(!dbCheck()){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("usn not found");
-            alert.setHeaderText(tf_usn + " has not assigned any bed");
+            alert.setHeaderText(tf_usn.getText() + " has not assigned any bed");
             alert.showAndWait();
             return;
         }
