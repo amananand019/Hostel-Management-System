@@ -33,6 +33,8 @@ public class HomeView implements Initializable {
     @FXML
     private Label tf_bed_count;
 
+    @FXML
+    private JFXButton food;
 
     @FXML
     private JFXButton singleSharing;
@@ -103,6 +105,11 @@ public class HomeView implements Initializable {
         laundry.setOnAction(actionEvent -> {
             openStage(Constants.LAUNDRY);
         });
+
+        food.setOnAction(actionEvent -> {
+            openStage(Constants.FOOD);
+        });
+
     }
 
     private void openStage(String url){

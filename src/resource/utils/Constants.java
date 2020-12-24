@@ -11,4 +11,5 @@ public class Constants {
     public static final String DOUBLESHARING = "/resource/layout/homebuttons/doubleSharing.fxml";
     public static final String TRIPLESHARING = "/resource/layout/homebuttons/tripleSharing.fxml";
     public static final String LAUNDRY = "/resource/layout/homebuttons/laundry.fxml";
+    public static final String FOOD = "/resource/layout/homebuttons/food.fxml";
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="740.0" prefWidth="1000.0" style="-fx-background-color: #2B303A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resource.controller.homebuttons.Food">
+   <children>
+      <JFXRadioButton fx:id="rb_north" layoutX="260.0" layoutY="57.0" selected="true" style="-jfx-selected-color: #3BCEAC;" text="North Food" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="food" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rb_south" layoutX="627.0" layoutY="58.0" style="-jfx-selected-color: #3BCEAC;" text="South Food" textFill="WHITE" toggleGroup="$food">
+         <font>
+            <Font name="Segoe UI" size="16.0" />
+         </font>
+      </JFXRadioButton>
+      <ImageView fx:id="iv_food" fitHeight="600.0" fitWidth="774.0" layoutX="124.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" style="-fx-alignment: CENTER;" />
+   </children>
+</AnchorPane>

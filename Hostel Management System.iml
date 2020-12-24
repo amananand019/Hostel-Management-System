@@ -9,7 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="library" exported="" name="com.jfoenix:jfoenix:9.0.10" level="application" />
-    <orderEntry type="library" name="fontawesomefx-8.2" level="application" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -31,5 +30,6 @@
         <jarDirectory url="file://C:/Program Files/MySQL/mysql-connector-java-8.0.22" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="fontawesomefx-8.2" level="application" />
   </component>
 </module>
